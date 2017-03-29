@@ -1,0 +1,23 @@
+OpenZWaveUtility
+Commandline utility for use with the OpenZWave Library
+
+This program provides a daemon that runs OpenZWave commands that it receives from client versions of the program.
+
+Typically, you'll want to run ozw_utility -D to create the daemon, and then e.g. 
+ozw_utility --node-number=1 --set-dimmer=99 
+to turn the dimmer associated with node 1 all the way on.
+
+ozw_utility -k will kill the daemon.
+
+
+To compile:
+1.  Install OpenZWave https://github.com/OpenZWave/open-zwave
+2.  Copy ozw_config to the directory with the OpenZWaveUtility source files.
+3.  make
+
+The result is the binary file ozw_utility
+
+IMPORTANT: The program expects a directory /run/ozw_utility/ so make sure that directory is created at boot or at least before you try to run the program.
+
+ozw_utility -h
+will show you all the available options. 
