@@ -1,4 +1,4 @@
-OpenZWaveUtility
+OpenZWave Utility
 Commandline utility for use with the OpenZWave Library
 
 This program provides a daemon that runs OpenZWave commands that it receives from client versions of the program.
